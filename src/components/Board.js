@@ -1,5 +1,5 @@
 import Square from "./Square";
-import {Fragment, useState} from "react";
+import {useState} from "react";
 
 const Board = () => {
     const status = 'Next player: X';
@@ -8,6 +8,7 @@ const Board = () => {
         const squaresCopy = squares.slice();
         squaresCopy[index] = 'X';
         setSquares(squaresCopy);
+        console.log('dupa')
     }
 
     return (
